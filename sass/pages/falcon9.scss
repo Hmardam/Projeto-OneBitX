@@ -1,0 +1,132 @@
+.container00{
+  &.container05{
+    background-image: url(../../imagens/falcon9/01.jpg);
+  }
+  &.container06{
+    background-image: url(../../imagens/falcon9/02.jpg);
+  }
+
+  &.carousel01{
+    background-image: url(../../imagens/falcon9/03.jpg);
+  }
+  &.carousel02{
+    background-image: url(../../imagens/falcon9/04.jpg);
+  }
+  &.carousel03{
+    background-image: url(../../imagens/falcon9/05.jpg);
+  }
+  &.carousel04{
+    background-image: url(../../imagens/falcon9/06.jpg);
+  }
+  &.carousel05{
+    background-image: url(../../imagens/falcon9/07.jpg);
+  }
+
+  &.container07{
+    background-image: url(../../imagens/falcon9/08.jpg);
+  }
+}
+
+.titleFalcon9{
+  font-size: 90px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 514px;
+}
+
+.titleContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+}
+
+.numbers{
+  background-color: black;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .titleNumb{
+    font-size: 90px;
+  }
+  .subTitleNumb{
+    font-size: 20px;
+  }
+  
+}
+
+.falcon9Desc{
+  font-size: 22px;
+  width: 640px;
+  line-height: 50px;
+}
+
+.containerFalcon9Desc{
+  display: grid;
+  height: 90vh;
+  align-items: center;
+  justify-content: left;
+}
+
+#overViewPosition{
+  width: 500px;
+  margin-left: 13%;
+  padding-top: 15%;
+}
+
+.carrosselSlide{
+  img{
+    height: 100vh;
+  }
+} 
+
+.carousselText{
+  background-color: black;
+}
+
+.button{
+  border: 2px solid white;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px){
+  .numbers{
+    .titleNumb{
+      font-size: 80px;
+    }
+    .subTitleNumb{
+      font-size: 18px;
+    }
+  }
+  .falcon9Desc{
+    width: auto;
+  }
+  #overViewPosition{
+    padding-top: 35%;
+  }
+  
+}
+
+@media (max-width: 575px){
+  .numbers{
+    height: 60vh;
+  }
+  #overViewPosition{
+    width: auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 375px){
+  .titleFalcon9{
+    font-size: 50px;
+  }
+  .falcon9Desc{
+    font-size: 18px;
+    line-height: auto;
+  }
+  .subTitleFalcon{
+    font-size: 16px;
+  }
+}

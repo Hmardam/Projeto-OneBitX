@@ -1,0 +1,99 @@
+.header{
+  font-size: 12px;
+  font-weight: bold;
+
+  #navItem{
+    &:hover{
+      color: $link-hover;
+    }
+  }
+}
+
+.container00{
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.arrowDown{
+  display:inline-block;
+  width: 90px;
+  margin-top: 5px;
+
+}
+
+.logoPC{
+  width: 240px;
+  margin-left: -10px;
+  margin-right: 20px;
+}
+
+#button{
+  padding: $padding-button;
+}
+
+.footer{
+  background-color: black;
+  height: 10vh;
+  font-size: 12px;
+  font-weight: 500px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+  a{
+    text-decoration: none;
+    color: white;
+    &:hover{
+      color: $link-hover;
+    }
+  }
+  .copyHMD{
+    color: $copy-color;
+  }
+}
+
+.downloadsDesc{
+  background-color: black;
+  height: 85vh;
+  padding-top: 300px;
+}
+
+.email{
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid white;
+    &:hover{
+      border-bottom: 1px solid $link-hover;
+      color: $link-hover;
+    } 
+}
+
+//media query
+
+@media (max-width: 449px){
+  .downloadsDesc{
+    button{
+      margin: 10px 0px;
+    }
+  }
+}
+
+@media (max-width: 405px){
+  .logoPC{
+    width: 180px;
+    margin-top: 15px;
+  }
+
+  .footer{
+    font-size: 10px;
+  }
+}
+
+@media (max-height: 350px){
+  .logoPC{
+    width: 150px;
+    margin-top: 15px;
+  }
+}
